@@ -35,7 +35,13 @@ public class JavaApplication5 {
             nacimiento[i]=read.nextInt();
             edad[i]=(byte)(2016-nacimiento[i]);
         }
-        
+        int indice=0;
+        while(indice<edad.length)
+        {
+            System.out.println(nombre[indice]+" tiene aproximados"
+                    + edad[indice]+" años");
+            indice++;
+        }
         
         
         
