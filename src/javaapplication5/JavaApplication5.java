@@ -29,16 +29,19 @@ public class JavaApplication5 {
         for (int i = 0; i < nombre.length; i++) {
             System.out.println("Ingrese el nombre para "
                     + "el usuario: "+(i+1));
-            nombre[i]=read.nextLine();
+            nombre[i]=read.next();
+         
             System.out.println("Ingrese el año de nacimiento"
-                    + " para el usuario: "+(i+1));
+                    + " para el usuario: "+(i+1));  
+            
             nacimiento[i]=read.nextInt();
             edad[i]=(byte)(2016-nacimiento[i]);
         }
         int indice=0;
-        while(indice<edad.length)
+        //read.nextLine();
+        while(indice<nacimiento.length)
         {
-            System.out.println(nombre[indice]+" tiene aproximados"
+            System.out.println("El usuario: "+nombre[indice]+" tiene aproximados "
                     + edad[indice]+" años");
             indice++;
         }
